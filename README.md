@@ -28,6 +28,8 @@ The main goal is to replace the vulnerable Pingo web application with a dockeriz
 
 This can be done using scp or rsync. Make backups of all the VMs files locally in your host machine. This may or may not include web application code files, any proxy configurations, database dump and configuration, etc.
 
+Note: Once you are sure you have backed up all necessary files, shut the VM down. If you need to access the VM again before step 7, you have failed step 1!
+
 ## 2. Set the application up locally
 
 This means you should be able to change the IP address in your `/etc/hosts` file to `127.0.0.1` and run the scoringbot to achieve 100% result in tests.
