@@ -40,7 +40,7 @@ This can be done as part of the previous step, but the goal is to have a single 
 
 ## 4. Patch the local version of the application
 
-This means you should investigate the application throroughly and patch any found vulnerabilities while documenting found issues and applied mitigations.
+This means you should investigate the application thoroughly and patch any found vulnerabilities while documenting found issues and applied mitigations.
 
 ## 5. Enable Web Application Firewall
 
