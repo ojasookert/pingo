@@ -1,6 +1,6 @@
 # Introduction
 
-This is an exercise to test your skills. You will be going through the process of setting up a VM with a service that mimics the behaviour of the real thing. You can then go through the official workplan with this service ask questions along the way if you get stuck.
+This is an exercise to test your skills. You will be going through the process of setting up a VM with a service that mimics the behaviour of the real thing. You can then go through the official workplan with this service and ask questions along the way if you get stuck.
 
 The main goal is to replace the vulnerable Pingo web application with a dockerized, patched version that sits behind a WAF.
 
@@ -28,7 +28,7 @@ The main goal is to replace the vulnerable Pingo web application with a dockeriz
 
 This can be done using scp or rsync. Make backups of all the VMs files locally in your host machine. This may or may not include web application code files, any proxy configurations, database dump and configuration, etc.
 
-Note: Once you are sure you have backed up all necessary files, shut the VM down. If you need to access the VM again before step 7, you have failed step 1!
+**Note:** Once you are sure you have backed up all necessary files, shut the VM down. **If you need to access the VM again before step 7, you have failed step 1!**
 
 ## 2. Set the application up locally
 
@@ -46,9 +46,13 @@ This means you should investigate the application throroughly and patch any foun
 
 TODO
 
+After adding the WAF, ensure the application retains all functionality. This means it has to look and behave the same as the original thing.
+
 ## 6. Re-tag and upload container images to your favourite Docker registry
 
 TODO
+
+These tagged Docker images will be used in the next step to automate the application deployment.
 
 ## 7. Automate deployment
 
